@@ -1,0 +1,258 @@
+
+body{
+    background-color: #F0F4F8;
+}
+aside{
+    position: sticky;
+    top: 0;
+}
+img{
+    mix-blend-mode: multiply;
+}
+nav{
+    background-color: #4D87C7;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav img{
+    width: 120px;
+    height: 70px;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+nav div , nav button{
+    margin: 15px;
+}
+nav a{
+    text-decoration: none;
+    border: 2px #F0F4F8 solid;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.card{
+    
+    border-radius: 5px;
+    background-color: #4D87C7;
+    color: white;
+    border: 2px solid #F0F4F8;
+    padding: 10px;
+    
+    
+} 
+
+@media screen and (max-width:1085px) { /*this is the first breakpoint*/
+    header,aside{
+        position: relative;
+    }
+    nav{
+        flex-direction: column;
+        justify-content: start;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+    }
+    nav div {
+        width: 50%;
+        text-align: center;
+    }
+    .side{
+        align-items: center;
+    }
+
+}
+aside{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    margin-top: 0;
+    background-color: #A1C6EA;
+}
+aside a{
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-right: solid 2px white;
+}
+.hero{
+    background-image: url("positive-excited-charming-redhead-woman-yellow-sweater-showing-smartphone-screen-advertise.jpg");
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero h2 {
+    width: 70%;
+    color: white;
+    margin: 20px;
+    padding: 50px;
+}
+h1{
+    text-align: center;
+}
+main img{
+    height: auto;
+    width: 50%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.article{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-bottom: 2px black solid;
+}
+button {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #28a745;
+    font-size: large;
+}
+input{
+    font-size: large;
+    border-radius: 3px;
+}
+label{
+    font-size: large;
+    font-weight: bold;
+}
+label,input{
+    margin: 10px
+}
+.article .side {
+    margin-bottom: 50px;
+}
+.side {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:  #C0C0C0;
+    border-radius: 10px;
+}
+.info h2{
+    color: #4D87C7;
+}
+.info h3{
+    color: #FF6F61;
+}
+.info p{
+    font-size: larger;
+}
+.container h1{
+    background-color: #5A9ABF;
+    color: white;
+}
+.steam{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "heading heading"
+    "art1 art2"
+    "art3 art4";
+}
+.steam h1{
+    grid-area: heading;
+}
+.art1{
+    grid-area: art1;
+}
+.art2{
+    grid-area: art2;
+}
+.art3{
+    grid-area: art3;
+}
+.art4{
+    grid-area: art4;
+}
+.art1,.art2,.art3,.art4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width:850px){/*this is the second break point*/
+    .side{
+        flex-direction: column;
+    }  
+    footer{
+        flex-direction: column;
+    }
+    .hero{
+        height: auto;
+    }
+}
+@media screen and (max-width:600px){ /*this is the last break point*/
+    .steam{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "heading"
+        "art1"
+        "art2"
+        "art3"
+        "art4" ;
+    }
+    ul{
+        flex-direction: column;
+    }
+}
+footer{
+    margin-top: 20px;
+    background-color: #2C5A8A;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    text-align: center;
+    font-size: large;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+footer a {color: white;
+    text-decoration: none;
+}
+footer div{
+    width: 100%;
+}
+footer li {
+    margin: 20px;
+}
+.div1{
+    border-right: 2px dotted white
+}
+.article p {
+    font-size: large;
+}
+.steam img:hover{
+    height: 350px;
+    width: 350px;
+}

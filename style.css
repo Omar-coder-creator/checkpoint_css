@@ -51,10 +51,7 @@ nav a{
     
 } 
 
-@media screen and (max-width:1085px) { /*this is the first breakpoint*/
-    header,aside{
-        position: relative;
-    }
+@media screen and (max-width:1100px) { /*this is the first breakpoint*/
     nav{
         flex-direction: column;
         justify-content: start;
@@ -155,6 +152,12 @@ label,input{
     align-items: center;
     background-color:  #C0C0C0;
     border-radius: 10px;
+    
+}
+.info div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .info h2{
     color: #4D87C7;
